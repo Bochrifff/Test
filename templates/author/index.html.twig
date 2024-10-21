@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AuthorController!{% endblock %}
+
+{% block body %}
+
+<div class="example-wrapper">
+
+    <ul>
+    {% for author in authors %}
+
+        <li>name :{{author.name}}</li>
+        <li>email :{{author.email}}</li>
+    {% endfor %}
+    </ul>
+</div>
+{% endblock %}
